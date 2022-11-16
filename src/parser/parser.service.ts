@@ -1,4 +1,5 @@
 import { Module, Injectable, Inject } from '@nestjs/common';
+import { FIrstParser } from './first-parser.domain';
 import { IParser } from './interface/paser.interface';
 
 @Injectable()

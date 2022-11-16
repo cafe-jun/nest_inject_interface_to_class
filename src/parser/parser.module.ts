@@ -1,3 +1,4 @@
+import { IParser } from './interface/paser.interface';
 import { ParserService } from './parser.service';
 import { Module } from '@nestjs/common';
 import { FIrstParser } from './first-parser.domain';
@@ -6,7 +7,7 @@ import { FIrstParser } from './first-parser.domain';
   providers: [
     ParserService,
     {
-      provide: 'Parser',
+      provide: IParser,
       useClass: FIrstParser,
     },
   ],

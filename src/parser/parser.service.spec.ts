@@ -12,7 +12,7 @@ describe('ParserService', () => {
         ParserService,
         {
           provide: IParser,
-          useClass: FIrstParser,
+          useClass: SecondParser,
         },
       ],
     }).compile();
